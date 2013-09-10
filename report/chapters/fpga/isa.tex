@@ -1,0 +1,35 @@
+\section{ISA}
+
+It was decided to use a processor architecture with 16-bit instruction words and 32 general purpose registers.
+The instructions are divided in three different classes, load/store instructions, arithmetic instructions
+and miscellaneous instructions. All instructions have a common group field in the two most significant bits,
+which is used to select between one of four instruction groups, as shown in table \ref{tab:group_fmt}.
+
+It was decided to use four condition flags, listed in table \ref{tab:condition_flags}. These are stored in
+a dedicated status and control register.
+
+\input{figures/fpga/isa-group-format}
+\input{figures/fpga/isa-condition-flags}
+
+\subsection{Load/store instructions}
+The format of load/store instructions is illustrated in figure \ref{fig:ls_instr_format}. The possible
+instructions are listed in table \ref{tab:ls_instrs}.
+
+\input{figures/fpga/isa-load-store-format}
+\input{figures/fpga/isa-load-store-instruction}
+
+\subsection{Arithmetic instructions}
+The format of the arithmetic instructions is illustrated in figure \ref{fig:arith_instr_format}. The Implemented
+instructions are listed in table \ref{tab:arith_instrs}. In order to support other variants of the same instructions,
+such as add-with-carry or multiply-and-accumulate, an option field has been added. The operations are implemented such
+that the result of an operation is written back to the first operand register, $ra = ra~op~rb$.
+
+\input{figures/fpga/isa-arithmetic-instruction}
+\input{figures/fpga/isa-arithmetic-implemented}
+
+\subsection{Miscellaneous instructions}
+The format of the miscellaneous instructions is illustrated in figure \ref{fig:misc_instr_format}. The
+implemented instructions are listed in table \ref{tab:misc_instrs}.
+
+\input{figures/fpga/isa-misc-instruction}
+\input{figures/fpga/isa-misc-implemented}

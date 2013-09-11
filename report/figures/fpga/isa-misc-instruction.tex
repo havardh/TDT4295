@@ -1,0 +1,14 @@
+
+\begin{figure}[ht]
+    \centering
+    \begin{bytefield}[endianness=big,bitwidth=0.05\linewidth]{16}
+        \bitheader{0-15} \\
+        \bitbox{2}{Group} &
+        \bitbox{1}{F} &
+        \bitbox{4}{Param} &
+        \bitbox{9}{Immediate}
+    \end{bytefield}
+
+    \caption{Format of the miscellaneous instructions}
+    \label{fig:misc_instr_format}
+\end{figure}

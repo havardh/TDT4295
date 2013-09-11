@@ -1,0 +1,15 @@
+
+\begin{figure}[ht]
+	\centering
+	\begin{bytefield}[endianness=big,bitwidth=0.05\linewidth]{16}
+		\bitheader{0-15} \\
+		\bitbox{2}{Group} &
+		\bitbox{2}{Funct} &
+		\bitbox{2}{Option} &
+		\bitbox{5}{Reg A} &
+		\bitbox{5}{Reg B} 
+	\end{bytefield}
+
+	\caption{Arithmetic instructions}
+	\label{fig:arith_instr_format}
+\end{figure}

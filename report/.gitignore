@@ -1,0 +1,10 @@
+# Generated files
+
+*.pdf
+*.aux
+*.toc
+*.blg
+*.log
+*.out
+*.bbl
+*.pyg

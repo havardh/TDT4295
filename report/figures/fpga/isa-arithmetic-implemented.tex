@@ -1,0 +1,23 @@
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|l l l l|}
+        \hline
+        \textbf{Group} & \textbf{Funct} & \textbf{Mnemonic} & \textbf{Instruction} \\
+        \hline
+        \multirow{4}{*}{\textsc{0b01}}
+            & \texttt{0b00} & \textsc{add} & Add\\
+            & \texttt{0b01} & \textsc{sub/cmp} & Subtract/compare\\
+            & \texttt{0b10} & \textsc{mul} & Multiply\\
+            & \texttt{0b11} & \textsc{mov} & Move between registers\\
+        \hline
+        \multirow{4}{*}{\textsc{0b10}} 
+            & \texttt{0b00} & \textsc{and} & Bitwise and\\
+            & \texttt{0b01} & \textsc{or} & Bitwise or\\
+            & \texttt{0b10} & \textsc{xor} & Bitwise exclusive or\\
+            & \texttt{0b11} & \textsc{not} & Bitwise invert\\
+        \hline
+    \end{tabular}
+
+    \caption{Implemented arithmetic instructions}
+    \label{tab:arith_instrs}
+\end{table}

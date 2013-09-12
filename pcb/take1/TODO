@@ -1,0 +1,6 @@
+EFM32GG990F1024
+- Verify capacitor values on ARM XTAL
+    - Assumed XTALs are:
+        32MHz: TXC - 7B-32.000MAAJ-T (18pF load capacitance)
+        32.768kHz: Any (12.5pF load capacitance)
+

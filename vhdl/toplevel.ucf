@@ -1,0 +1,5 @@
+# This file contains pin-definition made by PlanAhead.
+# The net field is a port in the toplevel module, and its association with a physical FPGA pin.
+
+NET "clk" LOC = V10;
+NET "sample_clk" LOC = U10;

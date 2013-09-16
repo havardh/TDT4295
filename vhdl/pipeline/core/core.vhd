@@ -1,9 +1,9 @@
-entity processorcore is
+entity core is
 	-- Generics
 	-- Ports
 end entity;
 
-architecture behaviour of processorcore is
+architecture behaviour of core is
 	-- Components
 begin
 	-- Instantiations

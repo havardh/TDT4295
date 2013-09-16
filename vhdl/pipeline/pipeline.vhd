@@ -42,6 +42,8 @@ architecture behaviour of pipeline is
 			address_out : in std_logic_vector(address_width - 1 downto 0);		-- Address for output data
 			address_in	: in std_logic_vector(address_width - 1 downto 0);		-- Address for input data
 			write_en		: in std_logic;			-- Write enable for writing data from data_in to address address_in
+			rodata_out	: out std_logic_vector(data_width - 1 downto 0);		-- Read-only data output
+			roaddress	: in std_logic_vector(address_width - 1 downto 0);		-- Address for the read-only data output
 			mode			: in ringbuffer_mode	-- Buffer mode
 		);
 	end component;
@@ -60,6 +62,7 @@ begin
 			address_in => (others => '0'),
 			address_out => (others => '0'),
 			write_en => '0',
+			roaddress => (others => '0'),
 			mode => NORMAL_MODE
 		);
 

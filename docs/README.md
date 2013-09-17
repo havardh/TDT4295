@@ -18,3 +18,6 @@ Energy Micro Documents
 * <a href="http://cdn.energymicro.com/dl/an/pdf/an0002_efm32_hardware_design_considerations.pdf">EFM32 Hardware Design Considerations</a>
 * <a href="http://cdn.energymicro.com/dl/devices/pdf/d0053_efm32gg_reference_manual.pdf">EFM32GG Reference Manual</a>
 
+Various components
+------------------
+* <a href="http://www.farnell.com/datasheets/1647396.pdf">FT232RL - USB-USART Bridge</a>

@@ -9,6 +9,9 @@ To build the project the gcc-arm-none-eabi toolchain is needed.
 To flash the microcontroller the eACommander tool provided by Energy Micro is needed.It's included in the Simplicity Studio install: http://www.energymicro.com/tools/simplicity-studio
 Linux and Mac version is available here: http://forum.energymicro.com/topic/990-simplicity-studio-120-energyaware-tools-osx-linux/
 
+CppUTest must be built.
+Run the script in sw/scripts/cpputest to do so.
+
 The rest of the libraries are included in the repository.
 
 Testing

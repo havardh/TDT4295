@@ -20,8 +20,11 @@ CFLAGS += --std=c99
 
 SRC_DIRS = \
   .\
-  ../**/**/src\
-	src\
+  ../controllers/**/src\
+  ../drivers/**/src\
+  ../libs/math/src\
+  src\
+
 
 TEST_SRC_DIRS = \
 	./**/**\

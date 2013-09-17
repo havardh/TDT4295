@@ -36,38 +36,38 @@ Folder layout
 -------------
 
 <pre>
-|---Makefile  <= makefile for bin to flash with
-|---main.c    <= main function for bin file
+|---Makefile  # makefile for bin to flash with
+|---main.c    # main function for bin file
 |---controllers/
 |   |---buttons/
-|   |   |---Makefile <= makefile for button controller demo
+|   |   |---Makefile # makefile for button controller demo
 |   |   |---inc/
 |   |   |   |---ButtonsController.h
 |   |   |---src/
 |   |   |   |---ButtonsController.c
 |   |   |---demo/
-|   |   |   |---main.c <= button controller demo
+|   |   |   |---main.c # button controller demo
 |   |---...
 |---drivers/
 |   |---buttons/
-|   |   |---Makefile <= makefile for button driver demo
+|   |   |---Makefile # makefile for button driver demo
 |   |   |---inc/
 |   |   |   |---ButtonsDriver.h
 |   |   |---src/
 |   |   |   |---ButtonsDriver.c
 |   |   |---demo/
-|   |   |   |---main.c <= button driver demo
+|   |   |   |---main.c # button driver demo
 |   |---...
 |---libs/
-|   |---CMSIS/  <= ARM Cortex library
-|   |---Device/ <= Device Specific library from EM (efm32gg990f1024.h, ...)
-|   |---emlib/  <= Energy Micro library
-|   |---emdrv/  <= Energy Micro library
-|   |---kits/   <= Kits Specific
-|   |---math/   <= Our own Math lib (software SDFT, etc.)
+|   |---CMSIS/  # ARM Cortex library
+|   |---Device/ # Device Specific library from EM (efm32gg990f1024.h, ...)
+|   |---emlib/  # Energy Micro library
+|   |---emdrv/  # Energy Micro library
+|   |---kits/   # Kits Specific
+|   |---math/   # Our own Math lib (software SDFT, etc.)
 |---tests/
-|   |---AllTests.cpp <= testrunner
-|   |---Makefile     <= makefile for all tests
+|   |---AllTests.cpp # testrunner
+|   |---Makefile     # makefile for all tests
 |   |---controllers/ 
 |   |   |---buttons/
 |   |   |   |---ButtonsControllerTest.cpp
